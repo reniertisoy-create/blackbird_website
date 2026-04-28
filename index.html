@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackbird Projects | Custom Homes & Renovations</title>
+  <meta name="description" content="Blackbird Projects creates custom homes, renovations, bathrooms, and residential maintenance across Toowoomba and the Darling Downs with craftsmanship, clarity, and architectural care.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Blackbird Projects home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="https://black-bird-landing-page.vercel.app/assets/logo-blackbird-provided.png" alt="Blackbird Logo">
+        </span>
+        <span class="brand-text">
+          <strong>Blackbird</strong>
+          <span>Projects</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About & Contact</a>
+        <a href="contact.html" class="nav-cta magnetic">Start Your Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media media-layer" data-depth="18">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Blackbird Projects residential exterior">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-gridline"></div>
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
+      <div class="container hero-content">
+        <div class="hero-topline reveal">
+          <span class="eyebrow">Residential Builder | Toowoomba & Darling Downs</span>
+          <div class="hero-tags">
+            <span>Custom Homes</span>
+            <span>Renovations</span>
+            <span>Bathrooms</span>
+            <span>Maintenance</span>
+          </div>
+        </div>
+        <div class="hero-layout">
+          <div class="hero-copy reveal">
+            <p class="hero-intro">Architectural storytelling, built for real life.</p>
+            <h1 id="hero-title">
+              <span>Homes with</span>
+              <span>substance.</span>
+              <span>Spaces with soul.</span>
+            </h1>
+          </div>
+          <aside class="hero-panel glass-panel reveal media-layer" data-depth="9">
+            <p>
+              Blackbird Projects delivers custom homes, renovations, bathrooms, and ongoing residential
+              care with measured execution, clear communication, and a strong eye for finish.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary magnetic" href="contact.html">Start Your Project</a>
+              <a class="button button-secondary magnetic" href="services.html">View Services</a>
+            </div>
+            <div class="hero-metrics">
+              <div>
+                <strong>Local</strong>
+                <span>Built for Toowoomba living</span>
+              </div>
+              <div>
+                <strong>Crafted</strong>
+                <span>Detail that holds up over time</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-band">
+      <div class="container trust-cards reveal-group">
+        <article class="trust-card reveal">
+          <span class="trust-index">01</span>
+          <h2>Local insight</h2>
+          <p>Homes shaped for the way Toowoomba families live, gather, and grow.</p>
+        </article>
+        <article class="trust-card reveal">
+          <span class="trust-index">02</span>
+          <h2>Clear delivery</h2>
+          <p>Transparent communication, honest sequencing, and no vague process.</p>
+        </article>
+        <article class="trust-card reveal">
+          <span class="trust-index">03</span>
+          <h2>Built detail</h2>
+          <p>Timber, stone, lighting, and finishes resolved with care, not rushed through.</p>
+        </article>
+        <article class="trust-card reveal">
+          <span class="trust-index">04</span>
+          <h2>End-to-end scope</h2>
+          <p>New homes, renovations, bathrooms, and maintenance handled under one roof.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="padding: 4rem 0; border-top: 1px solid var(--line); margin-top: 4rem;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a class="brand footer-brand" href="index.html" style="color: var(--ink);">
+        <span class="brand-text">
+          <strong>Blackbird</strong>
+          <span>Projects</span>
+        </span>
+      </a>
+      <p style="margin: 0; font-size: 0.9rem;">&copy; 2026 Blackbird Projects. Crafted in Toowoomba.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add simple scroll effect for header
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.site-header');
+      if (window.scrollY > 50) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

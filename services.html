@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Blackbird Projects</title>
+  <meta name="description" content="Blackbird Projects creates custom homes, renovations, bathrooms, and residential maintenance across Toowoomba and the Darling Downs with craftsmanship, clarity, and architectural care.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Slight override for non-hero pages to make the nav visible */
+    .site-header {
+      background: var(--warm-black);
+    }
+  </style>
+</head>
+<body style="background: var(--bg);">
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Blackbird Projects home">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="https://black-bird-landing-page.vercel.app/assets/logo-blackbird-provided.png" alt="Blackbird Logo">
+        </span>
+        <span class="brand-text">
+          <strong>Blackbird</strong>
+          <span>Projects</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About & Contact</a>
+        <a href="contact.html" class="nav-cta magnetic">Start Your Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top: 4rem;">
+    <section class="section editorial-section services-section" id="services">
+      <div class="container">
+        <div class="section-heading editorial-heading reveal">
+          <span class="section-kicker">Services</span>
+          <h2>Residential building, composed with more depth than a standard contractor brief.</h2>
+          <p>Each service is treated as a design and delivery problem to solve properly, not a package to rush through.</p>
+        </div>
+        
+        <div class="services-showcase reveal-group" style="margin-bottom: 4rem;">
+          <article class="service-card service-card-large reveal tilt-card" data-tilt>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Blackbird Projects custom home exterior">
+            <div class="service-sheen"></div>
+            <div class="service-overlay">
+              <span class="service-tag">New Homes</span>
+              <h3>Custom homes with weight, warmth, and lasting presence.</h3>
+              <p>Thoughtful planning, grounded detailing, and a home that feels settled from the start.</p>
+            </div>
+          </article>
+          
+          <article class="service-card reveal tilt-card" data-tilt>
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745a805b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blackbird Projects renovation kitchen and living space">
+            <div class="service-sheen"></div>
+            <div class="service-overlay">
+              <span class="service-tag">Renovations and Extensions</span>
+              <h3>Existing homes, reworked with flow and restraint.</h3>
+              <p>Extensions and internal transformations that feel natural to the original home.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal tilt-card" data-tilt>
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blackbird Projects custom bathroom">
+            <div class="service-sheen"></div>
+            <div class="service-overlay">
+              <span class="service-tag">Custom Bathrooms</span>
+              <h3>Bathrooms crafted with precision and considered material choices.</h3>
+              <p>Highly detailed wet areas that balance function, durability, and quiet luxury.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal tilt-card" data-tilt style="grid-column: span 2;">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Residential Maintenance">
+            <div class="service-sheen"></div>
+            <div class="service-overlay">
+              <span class="service-tag">Residential Maintenance</span>
+              <h3>Ongoing care to protect and preserve your property's value.</h3>
+              <p>Proactive and reactive maintenance services managed with the same exactness as our major projects.</p>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <a class="button button-primary magnetic" href="contact.html">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="padding: 4rem 0; border-top: 1px solid var(--line); margin-top: 4rem;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a class="brand footer-brand" href="index.html" style="color: var(--ink);">
+        <span class="brand-text">
+          <strong>Blackbird</strong>
+          <span>Projects</span>
+        </span>
+      </a>
+      <p style="margin: 0; font-size: 0.9rem;">&copy; 2026 Blackbird Projects. Crafted in Toowoomba.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add simple scroll effect for header
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.site-header');
+      if (window.scrollY > 50) {
+        header.classList.add('is-scrolled');
+      } else {
+        header.classList.remove('is-scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
