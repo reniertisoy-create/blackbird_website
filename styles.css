@@ -1694,6 +1694,42 @@ button {
   }
 }
 
+/* ── Short hero (inner pages) ─────────────────────── */
+.hero--short {
+  min-height: 76vh;
+}
+
+.hero--short .hero-content {
+  min-height: 76vh;
+  padding: 11rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero--short .hero-copy {
+  max-width: 52rem;
+  padding-right: 0;
+}
+
+.hero-sub {
+  margin: 1.25rem 0 0;
+  max-width: 38rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.75;
+  font-size: 1.08rem;
+}
+
+@media (max-width: 760px) {
+  .hero--short {
+    min-height: 60vh;
+  }
+  .hero--short .hero-content {
+    min-height: 60vh;
+    padding: 8rem 0 4rem;
+  }
+}
+
 /* ── Active nav link ──────────────────────────────── */
 .site-nav a.is-active::after {
   transform: scaleX(1);

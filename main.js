@@ -1,15 +1,8 @@
 // Header scroll state
-// Inner pages (services, contact) always keep the dark nav — only the homepage toggles it
 const header = document.querySelector('.site-header');
-const isInnerPage = !!document.querySelector('.page-header');
-
-if (isInnerPage) {
-  header.classList.add('is-scrolled');
-} else {
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('is-scrolled', window.scrollY > 50);
-  }, { passive: true });
-}
+window.addEventListener('scroll', () => {
+  header.classList.toggle('is-scrolled', window.scrollY > 50);
+}, { passive: true });
 
 // Mobile nav toggle
 const menuToggle = document.querySelector('.menu-toggle');

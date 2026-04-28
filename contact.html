@@ -80,7 +80,7 @@
 </head>
 <body>
 
-  <header class="site-header is-scrolled" id="top">
+  <header class="site-header" id="top">
     <div class="container nav-shell">
       <a class="brand" href="index.html" aria-label="Blackbird Projects home">
         <span class="brand-mark" aria-hidden="true">
@@ -103,17 +103,34 @@
 
   <main>
 
-    <!-- ── Page header ──────────────────────────────── -->
-    <section class="page-header">
-      <div class="container">
-        <span class="eyebrow">About &amp; Contact</span>
-        <h1>Built on craft.<br>Grounded in Toowoomba.</h1>
-        <p>We are a small residential building team with a straightforward belief: that good homes come from good process, honest communication, and genuine care for the finished result.</p>
+    <!-- ── Hero ────────────────────────────────────── -->
+    <section class="hero hero--short" aria-labelledby="contact-hero-title">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Blackbird Projects — warm residential interior">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-gridline"></div>
+      <div class="hero-glow hero-glow-left"></div>
+      <div class="hero-glow hero-glow-right"></div>
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <span class="eyebrow" style="display: inline-flex; margin-bottom: 1.25rem; color: rgba(255,255,255,0.54);">About &amp; Contact</span>
+          <h1 id="contact-hero-title" style="color: #fbf7f1;">
+            <span>Built on craft.</span>
+            <span>Grounded in</span>
+            <span>Toowoomba.</span>
+          </h1>
+          <p class="hero-sub">A small residential building team with a straightforward belief — that good homes come from good process, honest communication, and genuine care for the finished result.</p>
+          <div class="hero-actions" style="margin-top: 2rem;">
+            <a class="button button-primary" href="#contact">Start a Conversation</a>
+            <a class="button button-secondary" href="#story">Our Story</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ── The Blackbird story ───────────────────────── -->
-    <section class="section" aria-labelledby="story-heading">
+    <section class="section" id="story" aria-labelledby="story-heading">
       <div class="container">
         <div class="craftsmanship-layout">
           <div class="craftsmanship-copy reveal">
