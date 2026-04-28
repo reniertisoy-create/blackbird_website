@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Blackbird Projects</title>
-  <meta name="description" content="Blackbird Projects creates custom homes, renovations, bathrooms, and residential maintenance across Toowoomba and the Darling Downs with craftsmanship, clarity, and architectural care.">
+  <title>Services | Blackbird Projects — Custom Homes, Renovations &amp; Bathrooms</title>
+  <meta name="description" content="Blackbird Projects offers custom home builds, renovations, extensions, bathroom construction, and residential maintenance across Toowoomba and the Darling Downs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Slight override for non-hero pages to make the nav visible */
-    .site-header {
-      background: var(--warm-black);
-    }
-  </style>
 </head>
-<body style="background: var(--bg);">
-  <header class="site-header" id="top">
+<body>
+
+  <header class="site-header is-scrolled" id="top">
     <div class="container nav-shell">
       <a class="brand" href="index.html" aria-label="Blackbird Projects home">
         <span class="brand-mark" aria-hidden="true">
@@ -31,93 +26,245 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">About & Contact</a>
-        <a href="contact.html" class="nav-cta magnetic">Start Your Project</a>
+        <a href="services.html" class="is-active">Services</a>
+        <a href="contact.html">About &amp; Contact</a>
+        <a href="contact.html" class="nav-cta">Start Your Project</a>
       </nav>
     </div>
   </header>
 
-  <main style="padding-top: 4rem;">
-    <section class="section editorial-section services-section" id="services">
+  <main>
+
+    <!-- ── Page header ──────────────────────────────── -->
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Services</span>
+        <h1>Built to a standard,<br>not a deadline.</h1>
+        <p>Every service we offer is approached as a design and delivery problem to solve with care — not a package to rush through on the way to the next job.</p>
+      </div>
+    </section>
+
+    <!-- ── Services grid ────────────────────────────── -->
+    <section class="section services-section" id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="section-heading editorial-heading reveal">
-          <span class="section-kicker">Services</span>
-          <h2>Residential building, composed with more depth than a standard contractor brief.</h2>
-          <p>Each service is treated as a design and delivery problem to solve properly, not a package to rush through.</p>
+          <span class="section-kicker">What we build</span>
+          <h2 id="services-heading">Four areas. One standard of care.</h2>
+          <p>From a full custom build to an ongoing maintenance relationship, the attention we bring doesn't change based on project size.</p>
         </div>
-        
-        <div class="services-showcase reveal-group" style="margin-bottom: 4rem;">
-          <article class="service-card service-card-large reveal tilt-card" data-tilt>
+        <div class="services-showcase reveal">
+          <article class="service-card service-card-large">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Blackbird Projects custom home exterior">
             <div class="service-sheen"></div>
             <div class="service-overlay">
               <span class="service-tag">New Homes</span>
               <h3>Custom homes with weight, warmth, and lasting presence.</h3>
-              <p>Thoughtful planning, grounded detailing, and a home that feels settled from the start.</p>
+              <p>Thoughtful planning, grounded detailing, and a home that feels settled from the start. We work closely with your architect or design team, or can recommend trusted local partners.</p>
             </div>
           </article>
-          
-          <article class="service-card reveal tilt-card" data-tilt>
-            <img src="https://images.unsplash.com/photo-1556910103-1c02745a805b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blackbird Projects renovation kitchen and living space">
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745a805b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blackbird Projects renovation kitchen">
             <div class="service-sheen"></div>
             <div class="service-overlay">
-              <span class="service-tag">Renovations and Extensions</span>
+              <span class="service-tag">Renovations &amp; Extensions</span>
               <h3>Existing homes, reworked with flow and restraint.</h3>
-              <p>Extensions and internal transformations that feel natural to the original home.</p>
+              <p>Extensions and internal transformations that feel natural to the original home — not added on.</p>
             </div>
           </article>
-
-          <article class="service-card reveal tilt-card" data-tilt>
+          <article class="service-card">
             <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blackbird Projects custom bathroom">
             <div class="service-sheen"></div>
             <div class="service-overlay">
               <span class="service-tag">Custom Bathrooms</span>
-              <h3>Bathrooms crafted with precision and considered material choices.</h3>
-              <p>Highly detailed wet areas that balance function, durability, and quiet luxury.</p>
+              <h3>Precision and considered material choices, every time.</h3>
+              <p>Highly detailed wet areas that balance function, durability, and quiet luxury in the same space.</p>
             </div>
           </article>
-
-          <article class="service-card reveal tilt-card" data-tilt style="grid-column: span 2;">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Residential Maintenance">
+          <article class="service-card" style="grid-column: span 2;">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Residential maintenance by Blackbird Projects">
             <div class="service-sheen"></div>
             <div class="service-overlay">
               <span class="service-tag">Residential Maintenance</span>
               <h3>Ongoing care to protect and preserve your property's value.</h3>
-              <p>Proactive and reactive maintenance services managed with the same exactness as our major projects.</p>
+              <p>Proactive and reactive maintenance services managed with the same exactness as our major projects. No job too small if it matters to your home.</p>
             </div>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div style="text-align: center; margin-top: 4rem;">
-          <a class="button button-primary magnetic" href="contact.html">Start Your Project</a>
+    <!-- ── How we work ──────────────────────────────── -->
+    <section class="section" style="background: var(--bg-soft);" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-heading editorial-heading reveal">
+          <span class="section-kicker">Our process</span>
+          <h2 id="process-heading">A steady process makes for a calm build.</h2>
+          <p>We follow a clear four-stage process on every project — so you always know what's happening and why.</p>
+        </div>
+        <div class="process-steps reveal">
+          <div class="process-step">
+            <div class="process-num">01</div>
+            <h3>Initial consultation</h3>
+            <p>We meet on site or over a call to understand your project, your budget, and what success looks like to you. No obligation, no pressure.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">02</div>
+            <h3>Planning &amp; design</h3>
+            <p>We work through drawings, specifications, and council requirements. We keep things clear and flag any decisions early so there are no surprises later.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">03</div>
+            <h3>The build</h3>
+            <p>Regular site updates, proactive communication, and a build environment that respects your time and your property. We treat your home as if it were ours.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">04</div>
+            <h3>Handover &amp; care</h3>
+            <p>A thorough defect walkthrough, full documentation handover, and an ongoing relationship. The job isn't done at the keys — it's done when you're settled.</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- ── Service area ──────────────────────────────── -->
+    <section class="section" aria-labelledby="area-heading">
+      <div class="container">
+        <div class="area-callout reveal">
+          <span class="section-kicker">Where we work</span>
+          <h3 id="area-heading">Toowoomba &amp; the Darling Downs</h3>
+          <p>We are a local builder in every sense. Our team lives here, our trades are here, and we understand the conditions, the climate, and the community that shapes how homes in this region are built and used.</p>
+          <div class="area-tags">
+            <span class="area-tag">Toowoomba</span>
+            <span class="area-tag">Highfields</span>
+            <span class="area-tag">Oakey</span>
+            <span class="area-tag">Pittsworth</span>
+            <span class="area-tag">Dalby</span>
+            <span class="area-tag">Darling Downs</span>
+            <span class="area-tag">Surrounding Regions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ──────────────────────────────────────── -->
+    <section class="section" style="background: var(--bg-soft);" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-heading editorial-heading reveal">
+          <span class="section-kicker">Common questions</span>
+          <h2 id="faq-heading">Things people usually ask before they reach out.</h2>
+        </div>
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you handle council approvals and building certifications?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. We manage the documentation and certification process as part of our service — including liaising with certifiers and council where required. We'll walk you through what approvals your project needs at our initial consultation.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does a custom home build typically take?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              For a full custom home, the build phase typically runs 12–18 months depending on the scope and complexity of the design. Pre-construction — including design, documentation, and approvals — adds several months before that. We provide an honest programme at the start of every project so you can plan accordingly.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What's your approach to budget and cost management?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              We provide detailed, itemised quotes and flag any changes to scope before they become cost variations. We don't hide contingency inside padding — we talk through risk openly so you know where your money is going at every stage of the project.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you work with owner-builders?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              We prefer to operate as the principal contractor so we can maintain quality control across all trades and take full accountability for the outcome. If you have an owner-builder permit and a specific trade scope in mind, reach out and we can discuss what's possible.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can you work with my architect or designer?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Absolutely. We regularly build from external architectural drawings and enjoy working alongside designers who are invested in the outcome. If you don't yet have a designer, we can recommend trusted local partners we've worked with previously.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do I get the process started?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Use the contact form or email us directly with a brief overview of your project. We'll respond within two business days to arrange a no-obligation initial conversation. From there, we'll let you know whether and how we can help.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ──────────────────────────────────────── -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-shell reveal">
+          <div class="cta-content">
+            <h2>Ready to start a conversation?</h2>
+            <p>Whether you have detailed plans or just an early idea, we'd love to hear from you. Reach out and we'll take it from there.</p>
+          </div>
+          <div>
+            <a class="button button-primary" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer" style="padding: 4rem 0; border-top: 1px solid var(--line); margin-top: 4rem;">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-      <a class="brand footer-brand" href="index.html" style="color: var(--ink);">
-        <span class="brand-text">
-          <strong>Blackbird</strong>
-          <span>Projects</span>
-        </span>
-      </a>
-      <p style="margin: 0; font-size: 0.9rem;">&copy; 2026 Blackbird Projects. Crafted in Toowoomba.</p>
+  <!-- ── Footer ───────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-text">
+            <strong>Blackbird</strong>
+            <span>Projects</span>
+          </span>
+        </a>
+        <p style="margin-top: 0.85rem; font-size: 0.9rem;">Residential building grounded in craft, clarity, and local knowledge. Toowoomba &amp; Darling Downs.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: rgba(18,18,18,0.38);">&copy; 2026 Blackbird Projects. Crafted in Toowoomba.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <span class="footer-col-label">Navigation</span>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About &amp; Contact</a>
+        <a href="contact.html">Start Your Project</a>
+      </nav>
+      <div class="footer-meta">
+        <span class="footer-col-label">Contact</span>
+        <a href="mailto:hello@blackbirdprojects.com.au">hello@blackbirdprojects.com.au</a>
+        <a href="tel:0400000000">0400 000 000</a>
+        <span>Toowoomba &amp; Darling Downs, QLD</span>
+      </div>
     </div>
   </footer>
 
-  <script>
-    // Add simple scroll effect for header
-    window.addEventListener('scroll', () => {
-      const header = document.querySelector('.site-header');
-      if (window.scrollY > 50) {
-        header.classList.add('is-scrolled');
-      } else {
-        header.classList.remove('is-scrolled');
-      }
-    });
-  </script>
+  <script src="main.js" defer></script>
 </body>
 </html>

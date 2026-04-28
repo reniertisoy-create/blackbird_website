@@ -3,50 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About & Contact | Blackbird Projects</title>
-  <meta name="description" content="Learn about Blackbird Projects and get in touch to discuss your next custom home, renovation, or residential project in Toowoomba.">
+  <title>About &amp; Contact | Blackbird Projects — Toowoomba Builder</title>
+  <meta name="description" content="Learn about Blackbird Projects and start a conversation about your custom home, renovation, or bathroom project in Toowoomba and the Darling Downs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Slight override for non-hero pages to make the nav visible */
-    .site-header {
-      background: var(--warm-black);
-    }
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-    .form-label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-      color: var(--ink);
-    }
-    .form-input, .form-textarea, .form-select {
+    .contact-form-input,
+    .contact-form-textarea,
+    .contact-form-select {
       width: 100%;
-      padding: 1rem;
-      border: 1px solid rgba(18, 18, 18, 0.12);
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(18, 18, 18, 0.14);
       border-radius: var(--radius-small);
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.82);
       font-family: inherit;
       font-size: 1rem;
       color: var(--ink);
       transition: border-color var(--ease), box-shadow var(--ease);
+      appearance: none;
     }
-    .form-input:focus, .form-textarea:focus, .form-select:focus {
+    .contact-form-input:focus,
+    .contact-form-textarea:focus,
+    .contact-form-select:focus {
       outline: none;
       border-color: var(--accent);
-      box-shadow: 0 0 0 4px rgba(169, 138, 89, 0.15);
+      box-shadow: 0 0 0 3px rgba(169, 138, 89, 0.14);
     }
-    .form-textarea {
-      min-height: 150px;
+    .contact-form-textarea {
+      min-height: 160px;
       resize: vertical;
+    }
+    .contact-form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--ink);
+    }
+    .contact-form-group {
+      margin-bottom: 1.25rem;
+    }
+    .contact-detail-block {
+      margin-bottom: 2rem;
+    }
+    .contact-detail-block strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .contact-detail-block p,
+    .contact-detail-block a {
+      color: var(--ink-soft);
+      line-height: 1.65;
+    }
+    .contact-detail-block a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4rem;
+    }
+    @media (max-width: 760px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
     }
   </style>
 </head>
-<body style="background: var(--bg);">
-  <header class="site-header" id="top">
+<body>
+
+  <header class="site-header is-scrolled" id="top">
     <div class="container nav-shell">
       <a class="brand" href="index.html" aria-label="Blackbird Projects home">
         <span class="brand-mark" aria-hidden="true">
@@ -61,120 +95,218 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="contact.html">About & Contact</a>
-        <a href="contact.html" class="nav-cta magnetic">Start Your Project</a>
+        <a href="contact.html" class="is-active">About &amp; Contact</a>
+        <a href="contact.html" class="nav-cta">Start Your Project</a>
       </nav>
     </div>
   </header>
 
-  <main style="padding-top: 4rem;">
-    <!-- ABOUT SECTION -->
-    <section class="section">
+  <main>
+
+    <!-- ── Page header ──────────────────────────────── -->
+    <section class="page-header">
       <div class="container">
-        <div class="why-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-          <div class="why-story reveal">
-            <span class="section-kicker">About Us</span>
-            <h2 style="margin-bottom: 1.5rem;">Why Blackbird?</h2>
-            <p style="margin-bottom: 1rem;">
-              We are a Toowoomba-based residential builder focused on crafting homes that hold their value and beauty over time. Our approach is grounded in local insight, understanding exactly how families in the Darling Downs live and grow.
-            </p>
-            <p>
-              Rather than rushing volume, we focus on the built detail. From the first site conversation to the final handover, we ensure the process stays calm, clear, and well managed. Every project is an opportunity for architectural storytelling, built for real life.
-            </p>
+        <span class="eyebrow">About &amp; Contact</span>
+        <h1>Built on craft.<br>Grounded in Toowoomba.</h1>
+        <p>We are a small residential building team with a straightforward belief: that good homes come from good process, honest communication, and genuine care for the finished result.</p>
+      </div>
+    </section>
+
+    <!-- ── The Blackbird story ───────────────────────── -->
+    <section class="section" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="craftsmanship-layout">
+          <div class="craftsmanship-copy reveal">
+            <span class="section-kicker">Our story</span>
+            <h2 id="story-heading">Started local. Built to last.</h2>
+            <p>Blackbird Projects was founded on a simple frustration: too many residential builds were being rushed, under-communicated, and handed over with defects that were treated as an afterthought. We wanted to do it differently.</p>
+            <p style="margin-top: 1rem; color: var(--ink-soft); line-height: 1.75;">Based in Toowoomba, we focus on a deliberate range of residential work — custom homes, renovations, bathrooms, and ongoing property care. Our team is small by design. Small enough that every project gets real attention from someone who will be on site every day.</p>
+            <p style="margin-top: 1rem; color: var(--ink-soft); line-height: 1.75;">We work across Toowoomba and the broader Darling Downs, drawing on local knowledge that a larger builder simply can't replicate — the trades, the climate, the way families in this region actually live in their homes.</p>
           </div>
-          <div class="why-visual reveal media-layer" data-depth="12">
-             <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Blackbird Projects Craftsmanship" style="border-radius: var(--radius); box-shadow: var(--shadow);">
+          <div class="reveal" style="position: relative;">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Blackbird Projects craftsmanship detail" style="border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; object-fit: cover; aspect-ratio: 4/3;">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="section" style="background: var(--bg-soft); padding: 6rem 0;">
+    <!-- ── Values strip ──────────────────────────────── -->
+    <section class="section" style="background: var(--bg-soft); padding-top: 4rem; padding-bottom: 5rem;" aria-labelledby="values-heading">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
-          
-          <!-- Contact Info -->
-          <div class="reveal">
-            <span class="section-kicker">Get in Touch</span>
-            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 5vw, 4rem); margin-bottom: 1.5rem; line-height: 1;">Start a conversation about your home.</h2>
-            <p style="color: var(--ink-soft); margin-bottom: 3rem; font-size: 1.1rem;">
-              Whether you are planning a new build or a thoughtful renovation, we would love to hear from you. 
-            </p>
-            
-            <div style="margin-bottom: 2rem;">
-              <strong style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">Service Area</strong>
-              <p style="color: var(--ink-soft);">Toowoomba & The Darling Downs</p>
-            </div>
-            
-            <div style="margin-bottom: 2rem;">
-              <strong style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">Email</strong>
-              <a href="mailto:hello@blackbirdprojects.com.au" style="color: var(--accent); font-weight: 600;">hello@blackbirdprojects.com.au</a>
-            </div>
+        <div class="section-heading editorial-heading reveal">
+          <span class="section-kicker">What drives us</span>
+          <h2 id="values-heading">Three things we never compromise on.</h2>
+        </div>
+        <div class="values-strip reveal">
+          <div class="value-card">
+            <div class="value-card-num">01</div>
+            <h3>Craft</h3>
+            <p>We care about how things are built — the joints, the reveals, the material transitions that most people won't consciously notice but will always feel. That attention doesn't switch off when a project gets busy.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-num">02</div>
+            <h3>Clarity</h3>
+            <p>Building a home is one of the most significant things you'll do. You deserve to know what's happening, why, and when. We communicate proactively — not just when something goes wrong.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-num">03</div>
+            <h3>Community</h3>
+            <p>We are Toowoomba locals building for Toowoomba families. We use local trades where we can, we understand the region, and we're invested in the quality of homes in this community for the long run.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div>
-              <strong style="display: block; margin-bottom: 0.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">Phone</strong>
-              <p style="color: var(--ink-soft);">0400 000 000</p>
+    <!-- ── Builder profile ───────────────────────────── -->
+    <section class="section" aria-labelledby="builder-heading">
+      <div class="container">
+        <div class="builder-layout">
+          <div class="builder-photo reveal">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blackbird Projects lead builder">
+          </div>
+          <div class="reveal">
+            <span class="section-kicker">The team</span>
+            <h2 id="builder-heading">People who care about the work they put their name to.</h2>
+            <blockquote class="builder-quote">
+              "Every project is a chance to build something that will outlast the conversation that started it."
+            </blockquote>
+            <div class="builder-bio">
+              <p>Our lead builder brings over fifteen years of residential construction experience across Toowoomba and the Darling Downs. He has worked across every project type we offer — from full custom builds to detailed bathroom renovations — and is on site for every Blackbird project, not just at the beginning.</p>
+              <p>The wider team is drawn from trusted local trades with long-standing relationships built on shared standards. We don't use subcontractors we wouldn't want working in our own homes.</p>
+            </div>
+            <div style="margin-top: 2rem;">
+              <a class="button button-primary" href="#contact">Start a conversation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact section ───────────────────────────── -->
+    <section class="section" id="contact" style="background: var(--bg-soft);" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact info -->
+          <div class="reveal">
+            <span class="section-kicker">Get in touch</span>
+            <h2 id="contact-heading" style="font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 4rem); font-weight: 600; line-height: 0.96; letter-spacing: -0.03em; margin: 0.75rem 0 1.5rem; color: var(--ink);">Start a conversation about your home.</h2>
+            <p style="color: var(--ink-soft); line-height: 1.75; margin-bottom: 3rem; font-size: 1.05rem;">Whether you have detailed plans or just an early idea, we'd love to hear from you. Fill in the form or reach out directly — we respond to all enquiries within two business days.</p>
+
+            <div class="contact-detail-block">
+              <strong>Email</strong>
+              <a href="mailto:hello@blackbirdprojects.com.au">hello@blackbirdprojects.com.au</a>
+            </div>
+            <div class="contact-detail-block">
+              <strong>Phone</strong>
+              <p><a href="tel:0400000000" style="color: var(--ink-soft); font-weight: 400;">0400 000 000</a></p>
+            </div>
+            <div class="contact-detail-block">
+              <strong>Service area</strong>
+              <p>Toowoomba &amp; The Darling Downs, QLD</p>
+            </div>
+            <div class="contact-detail-block">
+              <strong>Office hours</strong>
+              <p>Monday – Friday, 7:00 am – 5:00 pm</p>
             </div>
           </div>
 
-          <!-- Contact Form (Glass Panel) -->
-          <div class="glass-panel reveal" style="padding: 3rem; border-radius: var(--radius); background: rgba(255, 255, 255, 0.4);">
-            <form action="#" method="POST">
-              <div class="form-group">
-                <label class="form-label" for="name">Full Name</label>
-                <input type="text" id="name" name="name" class="form-input" required>
+          <!-- Contact form -->
+          <div class="glass-panel reveal" style="padding: clamp(1.75rem, 3.5vw, 2.75rem); border-radius: var(--radius); background: rgba(255, 255, 255, 0.52);">
+            <form action="#" method="POST" novalidate>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="contact-form-group">
+                  <label class="contact-form-label" for="cf-first">First name</label>
+                  <input type="text" id="cf-first" name="first_name" class="contact-form-input" autocomplete="given-name" required>
+                </div>
+                <div class="contact-form-group">
+                  <label class="contact-form-label" for="cf-last">Last name</label>
+                  <input type="text" id="cf-last" name="last_name" class="contact-form-input" autocomplete="family-name" required>
+                </div>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="email">Email Address</label>
-                <input type="email" id="email" name="email" class="form-input" required>
+              <div class="contact-form-group">
+                <label class="contact-form-label" for="cf-email">Email address</label>
+                <input type="email" id="cf-email" name="email" class="contact-form-input" autocomplete="email" required>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="project-type">Project Type</label>
-                <select id="project-type" name="project-type" class="form-select" required>
-                  <option value="" disabled selected>Select an option...</option>
-                  <option value="new-home">New Custom Home</option>
-                  <option value="renovation">Renovation or Extension</option>
-                  <option value="bathroom">Custom Bathroom</option>
-                  <option value="maintenance">Residential Maintenance</option>
-                  <option value="other">Other</option>
+              <div class="contact-form-group">
+                <label class="contact-form-label" for="cf-phone">Phone (optional)</label>
+                <input type="tel" id="cf-phone" name="phone" class="contact-form-input" autocomplete="tel">
+              </div>
+              <div class="contact-form-group">
+                <label class="contact-form-label" for="cf-type">Project type</label>
+                <select id="cf-type" name="project_type" class="contact-form-select" required>
+                  <option value="" disabled selected>Select an option…</option>
+                  <option value="new-home">New custom home</option>
+                  <option value="renovation">Renovation or extension</option>
+                  <option value="bathroom">Custom bathroom</option>
+                  <option value="maintenance">Residential maintenance</option>
+                  <option value="other">Other / not sure yet</option>
                 </select>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="message">Tell us about your project</label>
-                <textarea id="message" name="message" class="form-textarea" required></textarea>
+              <div class="contact-form-group">
+                <label class="contact-form-label" for="cf-message">Tell us about your project</label>
+                <textarea id="cf-message" name="message" class="contact-form-textarea" placeholder="A brief overview of what you have in mind, where the property is, and any timing considerations…" required></textarea>
               </div>
-              <button type="submit" class="button button-primary magnetic" style="width: 100%; font-weight: 600;">Send Enquiry</button>
+              <button type="submit" class="button button-primary" style="width: 100%; font-weight: 700; font-size: 0.92rem; letter-spacing: 0.05em;">Send enquiry</button>
+              <p style="margin: 1rem 0 0; font-size: 0.82rem; color: var(--ink-soft); text-align: center;">We respond to all enquiries within two business days.</p>
             </form>
           </div>
-          
+
         </div>
       </div>
     </section>
+
+    <!-- ── Service area ──────────────────────────────── -->
+    <section class="section" aria-labelledby="area-heading">
+      <div class="container">
+        <div class="area-callout reveal">
+          <span class="section-kicker">Where we work</span>
+          <h3 id="area-heading">Toowoomba &amp; the Darling Downs</h3>
+          <p>We are based in Toowoomba and primarily build within the Darling Downs region. For projects outside this area, reach out and we can discuss scope and feasibility.</p>
+          <div class="area-tags">
+            <span class="area-tag">Toowoomba</span>
+            <span class="area-tag">Highfields</span>
+            <span class="area-tag">Oakey</span>
+            <span class="area-tag">Pittsworth</span>
+            <span class="area-tag">Dalby</span>
+            <span class="area-tag">Darling Downs</span>
+            <span class="area-tag">Surrounding Regions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer" style="padding: 4rem 0; border-top: 1px solid var(--line); margin-top: 0;">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-      <a class="brand footer-brand" href="index.html" style="color: var(--ink);">
-        <span class="brand-text">
-          <strong>Blackbird</strong>
-          <span>Projects</span>
-        </span>
-      </a>
-      <p style="margin: 0; font-size: 0.9rem;">&copy; 2026 Blackbird Projects. Crafted in Toowoomba.</p>
+  <!-- ── Footer ───────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-text">
+            <strong>Blackbird</strong>
+            <span>Projects</span>
+          </span>
+        </a>
+        <p style="margin-top: 0.85rem; font-size: 0.9rem;">Residential building grounded in craft, clarity, and local knowledge. Toowoomba &amp; Darling Downs.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: rgba(18,18,18,0.38);">&copy; 2026 Blackbird Projects. Crafted in Toowoomba.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <span class="footer-col-label">Navigation</span>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">About &amp; Contact</a>
+        <a href="contact.html">Start Your Project</a>
+      </nav>
+      <div class="footer-meta">
+        <span class="footer-col-label">Contact</span>
+        <a href="mailto:hello@blackbirdprojects.com.au">hello@blackbirdprojects.com.au</a>
+        <a href="tel:0400000000">0400 000 000</a>
+        <span>Toowoomba &amp; Darling Downs, QLD</span>
+      </div>
     </div>
   </footer>
 
-  <script>
-    // Add simple scroll effect for header
-    window.addEventListener('scroll', () => {
-      const header = document.querySelector('.site-header');
-      if (window.scrollY > 50) {
-        header.classList.add('is-scrolled');
-      } else {
-        header.classList.remove('is-scrolled');
-      }
-    });
-  </script>
+  <script src="main.js" defer></script>
 </body>
 </html>
