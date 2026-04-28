@@ -1582,9 +1582,13 @@ button {
     color: var(--ink);
   }
 
-  .site-header.is-scrolled .nav-shell .site-nav a,
   .site-header.is-scrolled .nav-shell .menu-toggle {
     color: #f7efe5;
+  }
+
+  /* Nav links always dark when menu is open — light bg needs dark text */
+  .site-header.is-scrolled .nav-shell .site-nav a {
+    color: var(--ink);
   }
 
   .hero-content {
