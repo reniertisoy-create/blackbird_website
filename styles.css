@@ -2093,6 +2093,111 @@ button {
   }
 }
 
+/* ── Hero inline form ─────────────────────────────── */
+.hero-layout {
+  align-items: center;
+}
+
+.hero-form-heading {
+  margin: 0 0 1.1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.hero-form-group {
+  margin-bottom: 0.7rem;
+}
+
+.hero-form-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-form-input,
+.hero-form-select,
+.hero-form-textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color var(--ease), background-color var(--ease);
+  box-sizing: border-box;
+}
+
+.hero-form-input::placeholder,
+.hero-form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.hero-form-input:focus,
+.hero-form-select:focus,
+.hero-form-textarea:focus {
+  border-color: rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-form-select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.hero-form-select option {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.hero-form-textarea {
+  resize: none;
+  min-height: 5rem;
+}
+
+.hero-form-submit {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color var(--ease), transform var(--ease), box-shadow var(--ease);
+}
+
+.hero-form-submit:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
+}
+
+.hero-form-note {
+  margin: 0.75rem 0 0;
+  text-align: center;
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.38);
+}
+
 /* ── Google Reviews ───────────────────────────────── */
 .reviews-section {
   background:
