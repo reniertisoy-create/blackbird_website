@@ -1,13 +1,13 @@
 ﻿:root {
-  --bg: #f4f1eb;
-  --bg-soft: #e9e4dc;
-  --surface: rgba(255, 255, 255, 0.68);
-  --ink: #121212;
-  --ink-soft: #565047;
+  --bg: #f5f5f5;
+  --bg-soft: #ebebeb;
+  --surface: rgba(255, 255, 255, 0.72);
+  --ink: #111111;
+  --ink-soft: #6b6b6b;
   --line: rgba(18, 18, 18, 0.12);
   --line-light: rgba(255, 255, 255, 0.14);
-  --accent: #a98a59;
-  --warm-black: #111111;
+  --accent: #1c1c1c;
+  --warm-black: #0d0d0d;
   --shadow: 0 32px 80px rgba(10, 10, 10, 0.16);
   --shadow-soft: 0 20px 48px rgba(10, 10, 10, 0.08);
   --radius: 28px;
@@ -37,7 +37,7 @@ body {
   overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.75), transparent 28rem),
-    linear-gradient(180deg, #f7f4ef 0%, #f2eee7 36%, #ece7df 100%);
+    linear-gradient(180deg, #f9f9f9 0%, #f4f4f4 36%, #eeeeee 100%);
 }
 
 img {
@@ -85,8 +85,8 @@ button {
 .site-header.is-scrolled .nav-shell {
   padding: 0.72rem 1.1rem;
   background:
-    linear-gradient(180deg, rgba(38, 32, 27, 0.74), rgba(22, 19, 17, 0.62)),
-    rgba(20, 18, 16, 0.52);
+    linear-gradient(180deg, rgba(15, 15, 15, 0.82), rgba(8, 8, 8, 0.72)),
+    rgba(12, 12, 12, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow:
     0 18px 42px rgba(10, 10, 10, 0.12),
@@ -99,7 +99,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.85rem;
-  color: #fbf7f1;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.9rem;
@@ -114,7 +114,7 @@ button {
   padding: 0;
   border-radius: 0;
   background: transparent;
-  color: #fbf7f1;
+  color: #ffffff;
   line-height: 1;
   transition: width var(--ease), height var(--ease), color var(--ease), transform var(--ease), opacity var(--ease), background-color var(--ease);
 }
@@ -131,11 +131,11 @@ button {
 }
 
 .site-header.is-scrolled .brand {
-  color: #f7efe5;
+  color: #f0f0f0;
 }
 
 .site-header.is-scrolled .brand-mark {
-  color: #f7efe5;
+  color: #f0f0f0;
 }
 
 .site-header.is-scrolled .brand {
@@ -169,7 +169,7 @@ button {
 
 .site-nav a {
   position: relative;
-  color: #fbf7f1;
+  color: #ffffff;
   transition: color var(--ease), opacity var(--ease);
 }
 
@@ -203,7 +203,7 @@ button {
   padding: 0.9rem 1.15rem;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(169, 138, 89, 0.14);
+  background: rgba(255, 255, 255, 0.1);
   transition: transform var(--ease), box-shadow var(--ease), background-color var(--ease), border-color var(--ease), color var(--ease);
 }
 
@@ -214,9 +214,9 @@ button {
 .site-header.is-scrolled .nav-cta {
   border-color: rgba(255, 255, 255, 0.08);
   background:
-    linear-gradient(180deg, rgba(197, 164, 112, 0.28), rgba(154, 124, 79, 0.18)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.08)),
     rgba(255, 255, 255, 0.06);
-  color: #fff6eb;
+  color: #ffffff;
   box-shadow: 0 10px 26px rgba(10, 10, 10, 0.14);
 }
 
@@ -229,7 +229,7 @@ button {
 .site-header.is-scrolled .nav-cta:hover,
 .site-header.is-scrolled .nav-cta:focus-visible {
   background:
-    linear-gradient(180deg, rgba(212, 178, 124, 0.34), rgba(167, 133, 86, 0.22)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.1)),
     rgba(255, 255, 255, 0.08);
   box-shadow: 0 16px 34px rgba(10, 10, 10, 0.18);
 }
@@ -240,11 +240,11 @@ button {
   border-radius: 999px;
   padding: 0.7rem 1rem;
   background: rgba(10, 10, 10, 0.22);
-  color: #fbf7f1;
+  color: #ffffff;
 }
 
 .site-header.is-scrolled .menu-toggle {
-  color: #f7efe5;
+  color: #f0f0f0;
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.06);
 }
@@ -314,7 +314,7 @@ button {
   inset: auto auto 8% 8%;
   width: 18rem;
   height: 18rem;
-  background: rgba(169, 138, 89, 0.2);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .hero-glow-right {
@@ -328,7 +328,7 @@ button {
   position: relative;
   z-index: 1;
   padding: 10.5rem 0 8.5rem;
-  color: #fbf7f1;
+  color: #ffffff;
   min-height: 100svh;
 }
 
@@ -423,7 +423,7 @@ button {
 .hero-panel p,
 .cta-content p {
   margin: 0 0 1.4rem;
-  color: rgba(247, 241, 233, 0.88);
+  color: rgba(240, 240, 240, 0.88);
   line-height: 1.8;
 }
 
@@ -531,19 +531,19 @@ button {
 
 .button-primary {
   background: var(--accent);
-  color: var(--ink);
+  color: #ffffff;
   box-shadow: 0 14px 30px rgba(10, 10, 10, 0.26);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: #b89661;
+  background: #333333;
 }
 
 .button-secondary {
   border-color: rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.08);
-  color: #fbf7f1;
+  color: #ffffff;
 }
 
 .trust-band {
@@ -633,7 +633,7 @@ button {
 
 .services-section {
   background:
-    radial-gradient(circle at top right, rgba(169, 138, 89, 0.08), transparent 24rem),
+    radial-gradient(circle at top right, rgba(0, 0, 0, 0.04), transparent 24rem),
     linear-gradient(180deg, rgba(255, 255, 255, 0.44), rgba(255, 255, 255, 0)),
     var(--bg);
 }
@@ -649,7 +649,7 @@ button {
   overflow: hidden;
   min-height: 23rem;
   border-radius: var(--radius);
-  background: #d7d1c7;
+  background: #cccccc;
   box-shadow: var(--shadow-soft);
   transition: transform var(--ease), box-shadow var(--ease);
   transform-style: preserve-3d;
@@ -710,7 +710,7 @@ button {
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(2rem, 2.5vw, 2.6rem);
   line-height: 0.96;
-  color: #fbf7f1;
+  color: #ffffff;
 }
 
 .service-overlay p,
@@ -855,7 +855,7 @@ button {
 .why-section {
   position: relative;
   background:
-    radial-gradient(circle at 12% 18%, rgba(169, 138, 89, 0.16), transparent 22rem),
+    radial-gradient(circle at 12% 18%, rgba(0, 0, 0, 0.05), transparent 22rem),
     radial-gradient(circle at 88% 72%, rgba(18, 18, 18, 0.06), transparent 18rem),
     linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0)),
     var(--bg);
@@ -952,7 +952,7 @@ button {
   inset: 0 auto 0 0;
   width: 3px;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(169, 138, 89, 0.75), rgba(169, 138, 89, 0));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(169, 138, 89, 0));
   opacity: 0;
   transition: opacity var(--ease);
 }
@@ -969,8 +969,8 @@ button {
 .why-panel-feature {
   padding: 1.8rem;
   background:
-    linear-gradient(135deg, rgba(25, 25, 25, 0.96), rgba(53, 46, 38, 0.88)),
-    #181716;
+    linear-gradient(135deg, rgba(25, 25, 25, 0.96), rgba(20, 20, 20, 0.96)),
+    #111111;
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 28px 70px rgba(12, 12, 12, 0.18);
 }
@@ -978,7 +978,7 @@ button {
 .why-panel-feature .why-index,
 .why-panel-feature h3,
 .why-panel-feature p {
-  color: #f6efe6;
+  color: #f0f0f0;
 }
 
 .why-panel:hover {
@@ -993,7 +993,7 @@ button {
 .testimonials-section {
   position: relative;
   background:
-    radial-gradient(circle at 18% 22%, rgba(169, 138, 89, 0.16), transparent 20rem),
+    radial-gradient(circle at 18% 22%, rgba(0, 0, 0, 0.05), transparent 20rem),
     radial-gradient(circle at 84% 68%, rgba(18, 18, 18, 0.06), transparent 18rem),
     linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 24rem),
     var(--bg-soft);
@@ -1089,7 +1089,7 @@ button {
   inset: 0 auto 0 0;
   width: 3px;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(169, 138, 89, 0.75), rgba(169, 138, 89, 0));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(169, 138, 89, 0));
   opacity: 0;
   transition: opacity var(--ease);
 }
@@ -1097,8 +1097,8 @@ button {
 .testimonial-card-feature {
   min-height: 26rem;
   background:
-    linear-gradient(145deg, rgba(25, 25, 25, 0.96), rgba(52, 44, 36, 0.9)),
-    #181716;
+    linear-gradient(145deg, rgba(25, 25, 25, 0.96), rgba(20, 20, 20, 0.95)),
+    #111111;
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 30px 80px rgba(12, 12, 12, 0.18);
 }
@@ -1110,7 +1110,7 @@ button {
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(169, 138, 89, 0.18), rgba(169, 138, 89, 0));
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.08), rgba(169, 138, 89, 0));
   pointer-events: none;
 }
 
@@ -1128,7 +1128,7 @@ button {
   font-family: "Cormorant Garamond", serif;
   font-size: 4rem;
   line-height: 0.7;
-  color: rgba(169, 138, 89, 0.46);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-card p {
@@ -1163,12 +1163,12 @@ button {
 .testimonial-card-feature .testimonial-tag,
 .testimonial-card-feature p,
 .testimonial-card-feature .testimonial-attribution {
-  color: #f6efe6;
+  color: #f0f0f0;
 }
 
 .testimonial-card-feature .testimonial-tag,
 .testimonial-card-feature .testimonial-attribution {
-  color: rgba(246, 239, 230, 0.74);
+  color: rgba(235, 235, 235, 0.74);
 }
 
 .enquiry-section {
@@ -1183,8 +1183,8 @@ button {
     linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.64)),
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.92), transparent 42%),
     radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.5), transparent 38%),
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0, rgba(255, 255, 255, 0.16) 16px, rgba(236, 231, 223, 0.12) 16px, rgba(236, 231, 223, 0.12) 32px),
-    linear-gradient(180deg, #f5f2ed, #ece7df);
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0, rgba(255, 255, 255, 0.16) 16px, rgba(210, 210, 210, 0.12) 16px, rgba(210, 210, 210, 0.12) 32px),
+    linear-gradient(180deg, #f5f5f5, #ebebeb);
   box-shadow: 0 24px 60px rgba(10, 10, 10, 0.08);
 }
 
@@ -1306,7 +1306,7 @@ button {
 
 .enquiry-submit:hover,
 .enquiry-submit:focus-visible {
-  background: rgba(169, 138, 89, 0.16);
+  background: rgba(0, 0, 0, 0.05);
   border-color: rgba(18, 18, 18, 0.9);
 }
 
@@ -1568,7 +1568,7 @@ button {
     padding: 1rem;
     border-radius: 1.25rem;
     border: 1px solid rgba(18, 18, 18, 0.08);
-    background: rgba(247, 244, 239, 0.97);
+    background: rgba(242, 242, 242, 0.97);
     backdrop-filter: blur(18px);
     box-shadow: 0 18px 42px rgba(10, 10, 10, 0.12);
   }
@@ -1583,7 +1583,7 @@ button {
   }
 
   .site-header.is-scrolled .nav-shell .menu-toggle {
-    color: #f7efe5;
+    color: #f0f0f0;
   }
 
   /* Nav links always dark when menu is open — light bg needs dark text */
@@ -1743,7 +1743,7 @@ button {
 .page-header {
   background: var(--warm-black);
   padding: 9rem 0 5rem;
-  color: #fbf7f1;
+  color: #ffffff;
 }
 
 .page-header .eyebrow {
@@ -1810,9 +1810,9 @@ button {
   padding: 3rem;
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(169, 138, 89, 0.1), rgba(169, 138, 89, 0.04)),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.02)),
     rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(169, 138, 89, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
@@ -1841,8 +1841,8 @@ button {
 .area-tag {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(169, 138, 89, 0.24);
-  background: rgba(169, 138, 89, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: rgba(0, 0, 0, 0.04);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -2010,7 +2010,7 @@ button {
 /* ── CTA section (shared) ─────────────────────────── */
 .cta-section {
   background:
-    radial-gradient(circle at 20% 50%, rgba(169, 138, 89, 0.12), transparent 22rem),
+    radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.05), transparent 22rem),
     var(--bg);
 }
 
@@ -2019,8 +2019,8 @@ button {
   border-radius: calc(var(--radius) + 0.35rem);
   border: 1px solid rgba(18, 18, 18, 0.06);
   background:
-    linear-gradient(135deg, rgba(25, 25, 25, 0.97), rgba(45, 38, 30, 0.94)),
-    #181716;
+    linear-gradient(135deg, rgba(25, 25, 25, 0.97), rgba(15, 15, 15, 0.97)),
+    #111111;
   box-shadow: 0 32px 80px rgba(10, 10, 10, 0.22);
   display: grid;
   grid-template-columns: 1fr auto;
@@ -2034,12 +2034,12 @@ button {
   font-weight: 600;
   line-height: 0.96;
   letter-spacing: -0.03em;
-  color: #fbf7f1;
+  color: #ffffff;
   margin: 0 0 0.85rem;
 }
 
 .cta-content p {
-  color: rgba(247, 241, 233, 0.72);
+  color: rgba(240, 240, 240, 0.72);
   line-height: 1.7;
   max-width: 38rem;
 }
