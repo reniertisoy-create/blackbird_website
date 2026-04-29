@@ -363,8 +363,12 @@ button {
 }
 
 .hero-tags {
-  gap: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
+  gap: 0;
+  margin-top: 1.75rem;
 }
 
 .hero-tags span {
@@ -374,6 +378,10 @@ button {
   background: none;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
+}
+
+.hero-tags span:first-child {
+  padding-left: 0;
 }
 
 .hero-tags span + span::before {
