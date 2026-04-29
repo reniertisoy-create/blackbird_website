@@ -2093,3 +2093,293 @@ button {
   }
 }
 
+/* ── Google Reviews ───────────────────────────────── */
+.reviews-section {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.03), transparent 24rem),
+    var(--bg-soft);
+}
+
+.reviews-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 2.5rem;
+}
+
+.reviews-badge {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.1rem 1.5rem;
+  border-radius: var(--radius-small);
+  border: 1px solid rgba(18, 18, 18, 0.09);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-soft);
+  flex-shrink: 0;
+}
+
+.reviews-badge-score {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.reviews-score-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.reviews-stars-row {
+  color: #fbbc04;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+}
+
+.reviews-count {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.reviews-badge-divider {
+  width: 1px;
+  height: 2.5rem;
+  background: var(--line);
+}
+
+.reviews-badge-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.reviews-badge-logo span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1.1fr repeat(2, minmax(0, 0.95fr));
+  gap: 1.15rem;
+}
+
+.review-card {
+  padding: 1.65rem;
+  border-radius: var(--radius-small);
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  background: rgba(255, 255, 255, 0.88);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: transform var(--ease), box-shadow var(--ease);
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+.review-card-feature {
+  background:
+    linear-gradient(145deg, rgba(20, 20, 20, 0.97), rgba(15, 15, 15, 0.97)),
+    #111111;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.review-stars {
+  color: #fbbc04;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+.review-date {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.review-card-feature .review-date {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.review-text {
+  flex: 1;
+  color: var(--ink-soft);
+  line-height: 1.72;
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+.review-card-feature .review-text {
+  color: rgba(240, 240, 240, 0.82);
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(18, 18, 18, 0.08);
+}
+
+.review-card-feature .review-author {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.review-avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.review-author-name {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.review-card-feature .review-author-name {
+  color: #f0f0f0;
+}
+
+.review-author-meta {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  margin-top: 0.1rem;
+}
+
+.review-card-feature .review-author-meta {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.reviews-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.25rem;
+}
+
+.button-outline {
+  border: 1px solid rgba(18, 18, 18, 0.22);
+  background: transparent;
+  color: var(--ink);
+  transition: background-color var(--ease), border-color var(--ease);
+}
+
+.button-outline:hover,
+.button-outline:focus-visible {
+  background: rgba(18, 18, 18, 0.06);
+  border-color: rgba(18, 18, 18, 0.4);
+}
+
+/* ── Service area map ─────────────────────────────── */
+.map-section {
+  background: var(--bg);
+  padding-bottom: 2rem;
+}
+
+.map-wrapper {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  aspect-ratio: 16 / 6;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  margin-top: 2.5rem;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.map-pin-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem 0.55rem 0.75rem;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.map-pin-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: #1a73e8;
+  flex-shrink: 0;
+}
+
+.map-label-toowoomba {
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map-label-darling {
+  top: 62%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.map-label-darling .map-pin-dot {
+  background: #34a853;
+}
+
+.map-area-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .reviews-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+}
+
